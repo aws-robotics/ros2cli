@@ -21,6 +21,11 @@ DEFAULT_TIMEOUT = 0.5
 
 
 class DirectNode:
+    """
+    An rclpy node that is created within the currently running process.
+
+    Intended as a reusable entrypoint for CLI verbs to get a node up and running.
+    """
 
     def __init__(self, args):
         timeout_reached = False
